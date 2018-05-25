@@ -1,2 +1,2 @@
 # MobileApplicationsConsultantTest
-Frist version to get bookdata and use Gson to parse them.
+Frist version to get book data and use Gson to parse them.
