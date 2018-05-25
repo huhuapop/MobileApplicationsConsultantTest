@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mobileapplicationsconsultanttest.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <Button
+        android:id="@+id/btngetdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onbtnGetdataClick"
+        android:text="GetData"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/txtoutput"
+        android:layout_width="363dp"
+        android:layout_height="379dp"
+        android:text="Output"
+        tools:layout_editor_absoluteY="124dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:layout_marginTop="40dp"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        />
+</android.support.constraint.ConstraintLayout>
