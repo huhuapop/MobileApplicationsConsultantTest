@@ -30,4 +30,13 @@
         android:scrollbars="vertical"
         android:fadeScrollbars="false"
         />
+
+    <ProgressBar
+        android:id="@+id/pbarview"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="359dp"
+        android:layout_height="26dp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="14dp" />
 </android.support.constraint.ConstraintLayout>

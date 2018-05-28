@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
@@ -105,10 +106,16 @@ public class MainActivity extends AppCompatActivity
         TextView outputtxt = (TextView) findViewById(R.id.txtoutput);
         outputtxt.setMovementMethod(ScrollingMovementMethod.getInstance());
         outputtxt.setMovementMethod(LinkMovementMethod.getInstance());//could open url
-
+        outputtxt.setVisibility(outputtxt.INVISIBLE);
+        ProgressBar proview = (ProgressBar) findViewById(R.id.pbarview);;
+        proview.setVisibility(proview.VISIBLE);
         String url="http://de-coding-test.s3.amazonaws.com/books.json";// set book url
         // String url="http://google.com";
-        new APIQuery(outputtxt).execute(url);
+        //proview.setIndeterminate(false);
+        APIQuery apiquery = new APIQuery(outputtxt,proview);
+        apiquery.execute(url);
+        //new APIQuery(outputtxt,proview).execute(url);
+
     }
 
 }

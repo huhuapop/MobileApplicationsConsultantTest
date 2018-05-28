@@ -27,11 +27,11 @@ public class Book {
         this.title=title;
     }
 
-    public  String getImageURL(){
+    public  String getimageURL(){
         return  imageURL;
     }
 
-    public  void setImageURL(String ImageURL){
+    public  void setimageURL(String ImageURL){
         this.imageURL=imageURL;
     }
 
